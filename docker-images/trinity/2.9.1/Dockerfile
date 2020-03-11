@@ -11,4 +11,5 @@ RUN tar xvfz trinityrnaseq-v2.9.1.FULL.tar.gz
 RUN apt-get install -y cmake
 RUN cd trinityrnaseq-v2.9.1 && make && make plugins
 RUN cd trinityrnaseq-v2.9.1 && cp -r Trinity PerlLib Butterfly Chrysalis Inchworm trinity-plugins util /usr/bin
+RUN apt-get install -y salmon
 ENV TRINITY_HOME /trinityrnaseq-Trinity-v2.9.1
